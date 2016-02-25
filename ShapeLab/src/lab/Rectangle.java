@@ -14,12 +14,23 @@ public class Rectangle {
 		return sideB;
 	}
 	
-	public void setSideB(double sideB)
-	{
-		this.sideA = sideA;
-	}
+	
 	public void setSideA(double sideA)
 	{
 		this.sideA = sideA;
+	}
+	public void setSideB(double side)
+	{
+		this.sideA = sideB;
+	}
+	
+	
+	public double getArea()
+	{
+		return sideA * sideB;
+	}
+	public double getPerimeter()
+	{
+		return 2 * sideA + 2 * sideB;
 	}
 }
