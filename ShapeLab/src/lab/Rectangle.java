@@ -1,6 +1,6 @@
 package lab;
 
-public class Rectangle {
+public class Rectangle implements Shape {
 
 	double sideA,
 	sideB;

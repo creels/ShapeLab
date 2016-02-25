@@ -1,6 +1,6 @@
 package lab;
 
-public class Circle {
+public class Circle implements Shape {
 	
 	double radius;
 	

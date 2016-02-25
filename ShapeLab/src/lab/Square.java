@@ -1,6 +1,6 @@
 package lab;
 
-public class Square {
+public class Square implements Shape {
 
 	double side;
 	
@@ -20,7 +20,7 @@ public class Square {
 		return side * side;
 	}
 	
-	 double getPerimeter()
+	 public double getPerimeter()
 	{
 		return side * 4;
 	}
