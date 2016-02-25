@@ -7,6 +7,11 @@ public class RightTriangle implements Shape{
 		double base;
 		double height;
 		
+		public RightTriangle(double base, double height){
+			this.base = base;
+			this.height = height;
+		}
+		
 		public void setBase(double base){
 			this.base = base;
 		}
@@ -33,6 +38,7 @@ public class RightTriangle implements Shape{
 			perimeter = base + height + Math.sqrt(hypotnuse);
 			return perimeter;
 		}
+		
 		
 		
 		

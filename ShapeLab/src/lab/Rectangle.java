@@ -5,6 +5,11 @@ public class Rectangle implements Shape {
 	double sideA,
 	sideB;
 	
+	public Rectangle(double sideA, double sideB){
+		this.sideA = sideA;
+		this.sideB = sideB;
+	}
+	
 	public double getSideA()
 	{
 		return sideA;
