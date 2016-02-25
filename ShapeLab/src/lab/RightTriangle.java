@@ -39,6 +39,12 @@ public class RightTriangle implements Shape{
 			return perimeter;
 		}
 		
+		public String toString(double area, double perimeter){
+			return String.format("A Right Triangle with a base %f, a height of %f, "
+					+ "an area of %f, and a perimeter of %f.", base,height,area,perimeter);
+			
+		}
+		
 		
 		
 		

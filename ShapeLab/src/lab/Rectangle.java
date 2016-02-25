@@ -38,4 +38,9 @@ public class Rectangle implements Shape {
 	{
 		return 2 * sideA + 2 * sideB;
 	}
+	public String toString(double area, double perimeter){
+		return String.format("A Rectangle with a side length of %f, another side length of %f, "
+				+ "an area of %f, and a perimeter of %f.", sideA,sideB,area,perimeter);
+		
+	}
 }

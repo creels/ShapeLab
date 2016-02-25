@@ -29,4 +29,10 @@ public class Circle implements Shape {
 	{
 		return Math.PI * 2* radius;
 	}
+	
+	public String toString(double area, double perimeter){
+		return String.format("A Circle with a radius of %f, "
+				+ "an area of %f, and a perimeter of %f.", radius,area,perimeter);
+		
+	}
 }

@@ -28,4 +28,10 @@ public class Square implements Shape {
 	{
 		return side * 4;
 	}
+	 
+	 public String toString(double area, double perimeter){
+			return String.format("A Square with a side length of %f, "
+					+ "an area of %f, and a perimeter of %f.", side,area,perimeter);
+			
+		}
 }
