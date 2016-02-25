@@ -11,22 +11,22 @@ public class main {
 		// TODO Auto-generated method stub
 
 		File file = new File("data");
-		Scanner tempeFile = new Scanner(file);
-		
+		Scanner tempFile = new Scanner(file);
 		int lines = 0;
-		while (tempeFile.hasNextLine())
+		while (tempFile.hasNext())
 		{
+			tempFile.nextLine();
 			lines++;
 		}
-		tempeFile.close();
+		tempFile.close();
 		
 		Scanner shapeFile = new Scanner(file);
 
 		String[] shapes = new String[lines];
 		
-		for(String shape : shapes)
+		for(int idx = 0; idx < lines; idx++)
 		{
-			shape = shapeFile.nextLine();			
+			shapes[idx] = shapeFile.nextLine();			
 		}
 		
 		shapeFile.close();
@@ -74,6 +74,10 @@ public class main {
 					Perimeter = triangle.getPerimeter();
 					output = triangle.toString(Area,Perimeter);
 					break;
+				}
+				default:
+				{
+					System.out.println("Not a shape");
 				}
 			}
 			System.out.println(output);

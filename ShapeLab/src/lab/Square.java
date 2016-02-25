@@ -30,8 +30,8 @@ public class Square implements Shape {
 	}
 	 
 	 public String toString(double area, double perimeter){
-			return String.format("A Square with a side length of %f, "
-					+ "an area of %f, and a perimeter of %f.", side,area,perimeter);
+			return String.format("A Square with a side length of %,.3f, "
+					+ "an area of %,.3f, and a perimeter of %,.3f.", side,area,perimeter);
 			
 		}
 }

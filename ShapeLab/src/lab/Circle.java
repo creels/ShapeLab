@@ -31,8 +31,8 @@ public class Circle implements Shape {
 	}
 	
 	public String toString(double area, double perimeter){
-		return String.format("A Circle with a radius of %f, "
-				+ "an area of %f, and a perimeter of %f.", radius,area,perimeter);
+		return String.format("A Circle with a radius of %,.3f, "
+				+ "an area of %,.3f, and a perimeter of %,.3f.", radius,area,perimeter);
 		
 	}
 }
